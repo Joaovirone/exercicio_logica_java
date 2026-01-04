@@ -1,0 +1,25 @@
+package logica_repeticao;
+
+import java.util.Scanner;
+
+public class logica_repeticao_8 {
+    
+    public static void main(String[] args) {
+        
+        int soma = 0;
+        int idade = 0;
+        int maiorIdade = 0;
+        Scanner leitura = new Scanner(System.in);
+        
+        for(int i = 1; i <= 10; i++){
+            System.out.print("Digite a " + i + "º idade: ");
+            idade = leitura.nextInt();
+            soma = soma + idade;
+            
+            if(idade >= 18){
+                maiorIdade++;    
+            }    
+        
+    }
+    System.out.println("A quantidade de pessoas maiores de idade são " + maiorIdade);
+}}
